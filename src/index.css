@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #3c5500;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #4f6f00;
+  --color-on-primary-container: #c9f17c;
+  --color-secondary-container: #dde8b2;
+  --color-on-secondary-container: #5f693d;
+  --color-secondary-fixed: #dde8b2;
+  --color-on-secondary-fixed-variant: #414b23;
+  --color-background: #fff8f3;
+  --color-surface: #fff8f3;
+  --color-surface-container: #f8ecdc;
+  --color-surface-container-low: #fef2e2;
+  --color-surface-container-high: #f3e6d7;
+  --color-surface-container-highest: #ede1d1;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface: #201b11;
+  --color-on-surface-variant: #444939;
+  --color-outline-variant: #c4c9b4;
+  --color-tertiary: #5a4a43;
+  --color-on-tertiary: #ffffff;
+  --color-error: #ba1a1a;
+  
+  --font-headline-title: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-body-md: 'Hanken Grotesk', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-body-md);
+  background-color: #fff9f4;
+  color: var(--color-on-surface);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.custom-shadow {
+  box-shadow: 0 10px 30px rgba(60, 85, 0, 0.05);
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
